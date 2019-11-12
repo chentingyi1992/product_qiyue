@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.jk</groupId>
+    <artifactId>product_front</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.1.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+
+    <modules>
+        <module>api</module>
+        <module>common</module>
+        <module>product_cty</module>
+        <module>product_eureka</module>
+        <module>product_feign</module>
+        <module>product_ll</module>
+        <module>product_wh</module>
+        <module>product_ydd</module>
+        <module>product_yzh</module>
+        <module>product_zbc</module>
+        <module>product_zuul</module>
+        <module>product_feign1</module>
+        <module>product_feign2</module>
+        <module>product_yzy</module>
+        <module>product_config</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <spring-cloud.version>Hoxton.RC1</spring-cloud.version>
+    </properties>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>com.jk</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

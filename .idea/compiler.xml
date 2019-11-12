@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="product_config" />
+        <module name="product_feign" />
+        <module name="product_feign1" />
+        <module name="product_ydd" />
+        <module name="product_eureka" />
+        <module name="product_yzy" />
+        <module name="product_wh" />
+        <module name="product_ll" />
+        <module name="api" />
+        <module name="product_zbc" />
+        <module name="product_zuul" />
+        <module name="product_cty" />
+        <module name="product_yzh" />
+        <module name="product_feign2" />
+        <module name="common" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="product_config" options="-parameters" />
+      <module name="product_cty" options="-parameters" />
+      <module name="product_eureka" options="-parameters" />
+      <module name="product_feign" options="-parameters" />
+      <module name="product_feign1" options="-parameters" />
+      <module name="product_feign2" options="-parameters" />
+      <module name="product_ll" options="-parameters" />
+      <module name="product_wh" options="-parameters" />
+      <module name="product_ydd" options="-parameters" />
+      <module name="product_yzh" options="-parameters" />
+      <module name="product_yzy" options="-parameters" />
+      <module name="product_zbc" options="-parameters" />
+      <module name="product_zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

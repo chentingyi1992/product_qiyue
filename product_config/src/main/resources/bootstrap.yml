@@ -1,0 +1,28 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    #应用名称
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          #配置git仓库地址
+          uri: https://github.com/wdd-929/test1.git
+          #配置仓库路径
+          search-paths:
+          #如果Git仓库为公开仓库，可以不填写用户名和密码，如果是私有仓库需要填写
+          #访问git仓库的用户名
+          username:
+          #访问git仓库的用户密码
+          password:
+      #指明使用的远程仓库的分支
+      label: master
+
+eureka:
+  client:
+    service-url:
+      #eureka服务地址
+      defaultZone: http://localhost:8080/eureka
