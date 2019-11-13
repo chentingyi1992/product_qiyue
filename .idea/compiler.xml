@@ -14,13 +14,13 @@
         <module name="product_yzy" />
         <module name="product_wh" />
         <module name="product_ll" />
-        <module name="api" />
         <module name="product_zbc" />
+        <module name="common" />
         <module name="product_zuul" />
         <module name="product_cty" />
         <module name="product_yzh" />
         <module name="product_feign2" />
-        <module name="common" />
+        <module name="api" />
       </profile>
     </annotationProcessing>
   </component>
