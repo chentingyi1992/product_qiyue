@@ -12,5 +12,10 @@ public class PageController {
         return "main";
     }
 
+    @RequestMapping("toZhao")
+    public String toZhao(){
+        return "zhaoF";
+    }
+
 
 }

@@ -7,19 +7,19 @@ spring:
     url: jdbc:mysql://192.168.1.30:3306/product_qiyue
     username: root
     password: 213316
+  data:
+    mongodb:
+      uri: mongodb://192.168.1.4:27017/product_qiyue
+
   application:
-    #Ӧ������
-    name: provider
+    name: provider-yzh
 
 eureka:
   client:
-    #eureka�����ַ
     service-url:
       defaultZone: http://localhost:8080/eureka
 
 mybatis:
-  #mybatisxml�ļ��ĵ�ַ
   mapper-locations: classpath:mapper/*.xml
-  #showsql
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
