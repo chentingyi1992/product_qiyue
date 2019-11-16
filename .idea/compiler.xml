@@ -7,20 +7,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="product_config" />
-        <module name="product_feign" />
+        <module name="product_feign2" />
         <module name="product_feign1" />
         <module name="product_ydd" />
         <module name="product_eureka" />
         <module name="product_yzy" />
         <module name="product_wh" />
         <module name="product_ll" />
+        <module name="product_feign" />
+        <module name="api" />
         <module name="product_zbc" />
-        <module name="common" />
         <module name="product_zuul" />
         <module name="product_cty" />
         <module name="product_yzh" />
-        <module name="product_feign2" />
-        <module name="api" />
+        <module name="common" />
       </profile>
     </annotationProcessing>
   </component>

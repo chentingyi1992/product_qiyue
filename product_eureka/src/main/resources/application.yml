@@ -1,15 +1,19 @@
+
 server:
   port: 8080
 
 spring:
   application:
-
+    #Ӧ������ �������Ҫ�������Ժ�ķ��������֮���໥����һ�㶼�Ǹ������name
     name: eureka-server
 eureka:
   client:
-
+    #��Ĭ�������erureka serverҲ��һ��eureka client ,����Ҫָ��һ�� server�������ᱨ��
+    #ע�ᵽeureka:�ر�  false��ʾ����ע������ע���Լ�
     register-with-eureka: false
+    #��ȡע���б��ر� false��ʾ�Լ��˾���ע�����ģ��ҵ�ְ�����ά������ʵ����������Ҫȥ��������
     fetch-registry: false
-
+    #����eureka�����ַ
+    #Ĭ�ϵ�ַΪ��http://localhost:8761/eureka/
     service-url:
       defaultZone: http://localhost:8080/eureka
