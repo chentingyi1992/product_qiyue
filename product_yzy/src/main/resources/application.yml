@@ -4,12 +4,12 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.1.30:3306/product_qiyue
+    url: jdbc:mysql://192.168.1.4:3306/product_qiyue
     username: root
     password: 213316
   application:
     #Ӧ������
-    name: provider
+    name: provider-yzy
 
 eureka:
   client:

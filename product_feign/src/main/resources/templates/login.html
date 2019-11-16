@@ -253,29 +253,25 @@
             </div>
             <!--form-->
             <div class="login-form">
+
                 <!--model name-->
                 <!--form list-->
                 <div class="tab-login">
-                    <span class="on">手机号登陆</span>
-                    <span>微信扫码登陆</span>
+                    <span class="on">账号密码登录</span>
                 </div>
                 <div class="each-show-login on">
                     <div class="login-ipt-box js-login-box">
+                        <form id="ff" name="f" method="post">
                         <div class="login-ipt type-phone">
-                            <input class="ipt-phone js-phone" data-limit="number" autocomplete="on" type="text" maxlength="11" oninput="" placeholder="请输入手机号">
-                            <script>
-                                $('.ipt-phone.js-phone').click(function () {
-                                    saMethod.ClickPhoneInput('登录页 ')
-                                })
-                            </script>
+                            <input class="ipt-code js-code" data-limit="number" type="text" placeholder="请输入账户" name="userName">
                         </div>
-                        <p class="ipt-err js-ipt-err"></p>
                         <div class="login-ipt code-line type-code">
-                            <input class="ipt-code js-code" data-limit="number" type="text" placeholder="请输入短信验证码">
-                            <input class="code-btn js-code-btn" type="button" value="获取验证码">
-                        </div>
-                        <p class="ipt-err js-ipt-err"></p>
+                            <input class="ipt-code js-code" data-limit="number" type="text" placeholder="请输入密码" name="userPwd">
+                            <!--<input class="ipt-code js-code" data-limit="number" type="text" placeholder="请输入短信验证码">
+                            <input class="code-btn js-code-btn" type="button" value="获取验证码">-->
+
                     </div>
+
                     <!--form list end-->
                     <!--条款-->
                     <div class="login-clause rel">
@@ -287,8 +283,9 @@
                     </div>
                     <!--条款 end-->
                     <div class="login-btn">
-                        <a class="js-login-btn" href="javascript:;">登录</a>
+                        <a class="js-login-btn" href="javascript:login();">登录</a>
                     </div>
+                    </form>
                 </div>
                 <div class="each-show-login">
                     <div id="wechat-login">
@@ -300,6 +297,27 @@
         </div>
     </div>
     </div>
+
+<script>
+     function  login(){
+        $.ajax({
+
+            url: '../yzy/login',
+            data: $("#ff").serialize(),
+            success: function (data) {
+                alert(data)
+                if (data == '登录成功') {
+                    location.href = "../page/toIndex"
+                } else {
+                    location.href = location;
+                }
+
+            }
+        })
+    }
+</script>
+
+
 <div class="footer">
     <div class="website-help">
         <div class="wibsite-center">
@@ -1381,6 +1399,7 @@
     <div class="layout-collection-hide">
         <span>收藏成功</span>
     </div>
+</div>
 </div>
 </body>
 </html>
